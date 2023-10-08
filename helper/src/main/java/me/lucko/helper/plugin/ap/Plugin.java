@@ -135,4 +135,12 @@ public @interface Plugin {
      */
     @Nonnull
     String[] libraries() default {};
+
+    /**
+     * Whether the plugin supports folia
+     *
+     * @return whether the plugin supports folia
+     */
+    @Nonnull
+    boolean foliaSupported() default false;
 }
